@@ -14,6 +14,20 @@
 
 <body>
 
+  <!-- Intro Screen Preloader -->
+  <div id="intro-screen">
+    <div class="intro-bg"></div>
+    <div class="intro-content">
+      <div class="intro-photo-wrap">
+        <img src="img1.jpeg" alt="Arthur DJATCHEU" class="intro-photo" />
+      </div>
+      <div class="intro-loader-btn" id="introBtn">
+        <div class="progress-fill" id="progressFill"></div>
+        <span id="introBtnText">Chargement...</span>
+      </div>
+    </div>
+  </div>
+
   <!-- Custom Cursor -->
   <div id="cursor"></div>
   <div id="cursor-ring"></div>
@@ -76,7 +90,7 @@
             Douala, Cameroun
           </div>
           <div class="hero-badge hero-badge-2">
-            <span>2</span>
+            <span>3</span>
             Projets live
           </div>
         </div>
@@ -128,7 +142,7 @@
           </div>
           <div class="about-stats">
             <div class="stat-card">
-              <div class="stat-number">2+</div>
+              <div class="stat-number">3+</div>
               <div class="stat-label" data-fr="Projets" data-en="Projects">Projets</div>
             </div>
             <div class="stat-card">
@@ -264,15 +278,15 @@
           </div>
         </div>
 
-        <!-- Web Design -->
+        <!-- JavaScript -->
         <div class="bento-card reveal"
           style="transition-delay:0.4s; background: linear-gradient(135deg, rgba(212,175,106,0.08), rgba(124,58,237,0.08));">
-          <div class="bento-icon">🎨</div>
-          <div class="bento-title" data-fr="Web Design" data-en="Web Design">Web Design</div>
+          <div class="bento-icon">⚡</div>
+          <div class="bento-title" data-fr="JavaScript" data-en="JavaScript">JavaScript</div>
           <div class="bento-desc"
-            data-fr="Certification freeCodeCamp en cours. Maîtrise des principes de design responsive et accessibilité."
-            data-en="freeCodeCamp certification in progress. Mastery of responsive design principles and accessibility.">
-            Certification freeCodeCamp en cours.
+            data-fr="Formation JavaScript en cours. Maîtrise des bases, du DOM et des interactions utilisateur."
+            data-en="JavaScript training in progress. Mastering the basics, DOM and user interactions.">
+            Formation JavaScript en cours.
           </div>
         </div>
 
@@ -335,14 +349,16 @@
         <div class="reveal-right">
           <h3 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; margin-bottom:1.5rem;"
             data-fr="Certifications" data-en="Certifications">Certifications</h3>
-          <div class="cert-grid" style="grid-template-columns: 1fr;">
-            <div class="cert-card">
+          <div class="cert-grid">
+            <div class="cert-card featured">
               <div class="cert-icon">💻</div>
               <div class="cert-info">
-                <div class="cert-name" data-fr="Responsive Web Design" data-en="Responsive Web Design">Responsive Web
-                  Design</div>
+                <div class="cert-name" data-fr="Responsive Web Design" data-en="Responsive Web Design">Responsive Web Design</div>
                 <div class="cert-provider">freeCodeCamp</div>
-                <span class="cert-status" data-fr="En cours" data-en="In progress">En cours</span>
+                <a class="btn-cert" href="https://freecodecamp.org/certification/aazer/responsive-web-design-v9" target="_blank" rel="noopener">
+                  <span class="btn-cert-title" data-fr="Voir le certificat" data-en="View certificate">Voir le certificat</span>
+                  <span class="btn-cert-sub" data-fr="✅ Obtenu — 11 juin 2026" data-en="✅ Obtained — June 11, 2026">✅ Obtenu — 11 juin 2026</span>
+                </a>
               </div>
             </div>
             <div class="cert-card">
@@ -350,6 +366,14 @@
               <div class="cert-info">
                 <div class="cert-name" data-fr="Marketing Digital" data-en="Digital Marketing">Marketing Digital</div>
                 <div class="cert-provider">Google Digital Garage</div>
+                <span class="cert-status" data-fr="En cours" data-en="In progress">En cours</span>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon">⚡</div>
+              <div class="cert-info">
+                <div class="cert-name" data-fr="Algorithmes & Structures de Données JS" data-en="JavaScript Algorithms & Data Structures">Algorithmes & Structures de Données JS</div>
+                <div class="cert-provider">freeCodeCamp</div>
                 <span class="cert-status" data-fr="En cours" data-en="In progress">En cours</span>
               </div>
             </div>
@@ -376,6 +400,7 @@
         <!-- Project 1: NURU -->
         <div class="project-card reveal" style="transition-delay:0.1s">
           <div class="project-preview">
+            <iframe src="https://nuru-ashy.vercel.app/" title="NURU Preview"></iframe>
             <div class="project-preview-mock">
               <div class="mock-dots">
                 <div class="mock-dot"></div>
@@ -415,6 +440,7 @@
         <!-- Project 2: Maëlle Beauty -->
         <div class="project-card reveal" style="transition-delay:0.2s">
           <div class="project-preview">
+            <iframe src="https://maelle-beauty-glow.lovable.app/" title="Maëlle Beauty Preview"></iframe>
             <div class="project-preview-mock">
               <div class="mock-dots">
                 <div class="mock-dot"></div>
@@ -446,6 +472,45 @@
               <span class="project-tag">Lovable</span>
             </div>
             <a href="https://maelle-beauty-glow.lovable.app/" target="_blank" class="project-link"
+              data-fr="Voir le projet →" data-en="View project →">Voir le projet →</a>
+          </div>
+        </div>
+
+        <!-- Project 3: Viny Natural Juice -->
+        <div class="project-card reveal" style="transition-delay:0.3s">
+          <div class="project-preview">
+            <iframe src="https://viny-natural-juice.vercel.app/" title="Viny Natural Juice Preview"></iframe>
+            <div class="project-preview-mock">
+              <div class="mock-dots">
+                <div class="mock-dot"></div>
+                <div class="mock-dot"></div>
+                <div class="mock-dot"></div>
+              </div>
+              <div style="text-align:center;">
+                <div
+                  style="font-family:var(--font-display);font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,#10b981,#d4af6a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+                  Viny Juice</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);margin-top:0.5rem;">
+                  viny-natural-juice.vercel.app</div>
+              </div>
+            </div>
+            <div class="project-preview-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">03 — 2026</div>
+            <div class="project-title">Viny Natural Juice</div>
+            <div class="project-desc"
+              data-fr="Site e-commerce vitrine pour Viny Natural Juice à Douala. Met en valeur des jus de fruits 100% bio et pressés à froid avec un système interactif de recettes personnalisées."
+              data-en="E-commerce showcase website for Viny Natural Juice in Douala. Featuring 100% organic cold-pressed fruit juices with an interactive custom recipe system.">
+              Site e-commerce vitrine pour Viny Natural Juice à Douala. Met en valeur des jus de fruits 100% bio et pressés à froid avec un système interactif de recettes personnalisées.
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">Vercel</span>
+            </div>
+            <a href="https://viny-natural-juice.vercel.app/" target="_blank" class="project-link"
               data-fr="Voir le projet →" data-en="View project →">Voir le projet →</a>
           </div>
         </div>
@@ -546,6 +611,28 @@
      JAVASCRIPT
 ============================================ -->
   <script>
+    /* ---- INTRO SCREEN PRELOADER ---- */
+    const introBtn = document.getElementById('introBtn');
+    const progressFill = document.getElementById('progressFill');
+    const introBtnText = document.getElementById('introBtnText');
+    const introScreen = document.getElementById('intro-screen');
+
+    // Start loading bar immediately
+    setTimeout(() => {
+      progressFill.style.width = '100%';
+    }, 100);
+
+    // After 5 seconds, transform to button
+    setTimeout(() => {
+      introBtn.classList.add('loaded');
+      introBtnText.textContent = "Let's build the future";
+      introBtn.addEventListener('click', enterPortfolio);
+    }, 5100);
+
+    function enterPortfolio() {
+      introScreen.classList.add('fade-out');
+    }
+
     /* ---- CURSOR ---- */
     const cursor = document.getElementById('cursor');
     const ring = document.getElementById('cursor-ring');
@@ -559,9 +646,788 @@
       requestAnimationFrame(animateRing);
     }
     animateRing();
-    document.querySelectorAll('a, button, .bento-card, .project-card, .cert-card, .stat-card').forEach(el => {
-      el.addEventListener('mouseenter', () => { cursor.style.width = '20px'; cursor.style.height = '20px'; ring.style.width = '60px'; ring.style.height = '60px'; });
-      el.addEventListener('mouseleave', () => { cursor.style.width = '12px'; cursor.style.height = '12px'; ring.style.width = '40px'; ring.style.height = '40px'; });
+    document.querySelectorAll('a, button, .bento-card, .project-card, .cert-card, .stat-card, .intro-loader-btn').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        if (el.classList.contains('intro-loader-btn') && !el.classList.contains('loaded')) return;
+        cursor.style.width = '20px'; cursor.style.height = '20px'; ring.style.width = '60px'; ring.style.height = '60px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '12px'; cursor.style.height = '12px'; ring.style.width = '40px'; ring.style.height = '40px';
+      });
+    });
+
+    /* ---- STARS CANVAS ---- */
+    const canvas = document.getElementById('stars-canvas');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+    function createStars() {
+      stars = [];
+      for (let i = 0; i < 180; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 1.5 + 0.2,
+          o: Math.random(),
+          s: Math.random() * 0.005 + 0.002,
+          twinkle: Math.random() * Math.PI * 2
+        });
+      }
+    }
+    function drawStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      stars.forEach(s => {
+        s.twinkle += s.s;
+        const opacity = (Math.sin(s.twinkle) + 1) / 2 * s.o;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(200, 210, 255, ${opacity})`;
+        ctx.fill();
+      });
+      requestAnimationFrame(drawStars);
+    }
+    resizeCanvas(); createStars(); drawStars();
+    window.addEventListener('resize', () => { resizeCanvas(); createStars(); });
+
+    /* ---- TYPEWRITER ---- */
+    const phrases = {
+      fr: ['Développeur Web Junior...', 'Étudiant en Génie Informatique...', 'Basé à Douala, Cameroun...', 'Créateur d\'expériences digitales...'],
+      en: ['Junior Web Developer...', 'Computer Engineering Student...', 'Based in Douala, Cameroon...', 'Creator of digital experiences...']
+    };
+    let lang = 'fr';
+    let phraseIndex = 0, charIndex = 0, deleting = false;
+    const tw = document.getElementById('typewriter');
+    function typeLoop() {
+      const list = phrases[lang];
+      const current = list[phraseIndex % list.length];
+      if (!deleting) {
+        tw.textContent = current.slice(0, charIndex++);
+        if (charIndex > current.length) { deleting = true; setTimeout(typeLoop, 1800); return; }
+      } else {
+        tw.textContent = current.slice(0, charIndex--);
+        if (charIndex < 0) { deleting = false; phraseIndex++; setTimeout(typeLoop, 300); return; }
+      }
+      setTimeout(typeLoop, deleting ? 40 : 65);
+    }
+    typeLoop();
+
+    /* ---- SCROLL REVEAL ---- */
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(r => observer.observe(r));
+
+    /* ---- SKILL BARS ANIMATION ---- */
+    const skillObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+          skillObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.bento-card').forEach(c => skillObserver.observe(c));
+
+    /* ---- LANG TOGGLE ---- */
+    function toggleLang() {
+      lang = lang === 'fr' ? 'en' : 'fr';
+      document.getElementById('langBtn').textContent = lang === 'fr' ? 'EN' : 'FR';
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        const val = lang === 'fr' ? el.dataset.fr : el.dataset.en;
+        if (val) el.innerHTML = val;
+      });
+      phraseIndex = 0; charIndex = 0; deleting = false;
+    }
+
+    /* ---- THEME TOGGLE ---- */
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.dataset.theme === 'dark';
+      html.dataset.theme = isDark ? 'light' : 'dark';
+      document.getElementById('themeBtn').textContent = isDark ? '🌙' : '☀️';
+    }
+
+    /* ---- MOBILE MENU ---- */
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    /* ---- FORM SUBMIT ---- */
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    }
+
+    /* ---- PARALLAX ---- */
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      document.querySelectorAll('.hero-glow').forEach((g, i) => {
+        g.style.transform = `translateY(${scrollY * (0.1 + i * 0.05)}px)`;
+      });
+    });
+  </script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arthur DJATCHEU — Dev Junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Intro Screen Preloader -->
+  <div id="intro-screen">
+    <div class="intro-bg"></div>
+    <div class="intro-content">
+      <div class="intro-photo-wrap">
+        <img src="img1.jpeg" alt="Arthur DJATCHEU" class="intro-photo" />
+      </div>
+      <div class="intro-loader-btn" id="introBtn">
+        <div class="progress-fill" id="progressFill"></div>
+        <span id="introBtnText">Chargement...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Stars Canvas -->
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="toggleMenu()">✕</button>
+    <a href="#about" onclick="toggleMenu()" data-fr="À propos" data-en="About">À propos</a>
+    <a href="#skills" onclick="toggleMenu()" data-fr="Compétences" data-en="Skills">Compétences</a>
+    <a href="#formation" onclick="toggleMenu()" data-fr="Formation" data-en="Education">Formation</a>
+    <a href="#projects" onclick="toggleMenu()" data-fr="Projets" data-en="Projects">Projets</a>
+    <a href="#contact" onclick="toggleMenu()" data-fr="Contact" data-en="Contact">Contact</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#hero" class="nav-logo">AD.</a>
+    <ul class="nav-links">
+      <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+      <li><a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+      <li><a href="#formation" data-fr="Formation" data-en="Education">Formation</a></li>
+      <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
+      <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" onclick="toggleLang()" id="langBtn">EN</button>
+      <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️</button>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+     HERO SECTION
+============================================ -->
+  <section id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-glow hero-glow-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-visual">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-glow"></div>
+          <div class="hero-photo-ring ring-1">
+            <div class="ring-dot"></div>
+          </div>
+          <div class="hero-photo-ring ring-2">
+            <div class="ring-dot" style="background:var(--blue-light);box-shadow:0 0 12px var(--blue-light)"></div>
+          </div>
+          <!-- Photo principale : costume bleu élégant -->
+          <img src="img4.jpeg" alt="Arthur DJATCHEU" class="hero-photo"
+            onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'" />
+          <div class="hero-badge hero-badge-1">
+            <span>IUT</span>
+            Douala, Cameroun
+          </div>
+          <div class="hero-badge hero-badge-2">
+            <span>3</span>
+            Projets live
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <div class="hero-tag" data-fr="Disponible pour des opportunités" data-en="Open to opportunities">Disponible pour
+          des opportunités</div>
+        <h1 class="hero-name">
+          Arthur<br>
+          <span>DJATCHEU</span>
+        </h1>
+        <div class="hero-title-line" data-fr="Dev Junior · Génie Informatique"
+          data-en="Junior Dev · Computer Engineering">Dev Junior · Génie Informatique</div>
+        <div id="typewriter"></div>
+        <p class="hero-slogan"
+          data-fr='"La succession des choix que nous effectuons durant notre parcours détermine notre destination finale."'
+          data-en='"The succession of choices we make along our journey determines our final destination."'>
+          "La succession des choix que nous effectuons durant notre parcours détermine notre destination finale."
+        </p>
+        <div class="hero-tag" data-fr="Let's build the future" data-en="Let's build the future">Let's Build the FUTURE
+        </div>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary" data-fr="Voir mes projets →" data-en="See my projects →">Voir mes
+            projets →</a>
+          <a href="#contact" class="btn-secondary" data-fr="Me contacter" data-en="Contact me">Me contacter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span data-fr="Découvrir" data-en="Scroll">Découvrir</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     ABOUT SECTION
+============================================ -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="reveal-left">
+          <div class="about-photo-wrap">
+            <div class="about-photo-accent2"></div>
+            <img src="img7.jpeg" alt="Arthur DJATCHEU" class="about-photo"
+              onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'" />
+            <div class="about-photo-accent"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-label" data-fr="Projets" data-en="Projects">Projets</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">3</div>
+              <div class="stat-label" data-fr="Langues" data-en="Languages">Langues</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">4</div>
+              <div class="stat-label" data-fr="Technos" data-en="Techs">Technos</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">∞</div>
+              <div class="stat-label" data-fr="Ambition" data-en="Ambition">Ambition</div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="section-label" data-fr="Qui suis-je" data-en="Who am I">Qui suis-je</div>
+          <h2 class="section-title">
+            <span class="gradient-text" data-fr="À propos" data-en="About">À propos</span>
+          </h2>
+          <div class="section-divider"></div>
+          <div class="about-text">
+            <p data-fr="Je suis <strong>Arthur DJATCHEU</strong>, étudiant en Génie Informatique à l'IUT de Douala, Cameroun. Passionné par le développement web depuis mes premières lignes de code, je construis des expériences digitales qui allient esthétique moderne et performance technique."
+              data-en="I am <strong>Arthur DJATCHEU</strong>, a Computer Engineering student at IUT de Douala, Cameroon. Passionate about web development since my first lines of code, I build digital experiences that combine modern aesthetics and technical performance.">
+              Je suis <strong>Arthur DJATCHEU</strong>, étudiant en Génie Informatique à l'IUT de Douala, Cameroun.
+              Passionné par le développement web depuis mes premières lignes de code, je construis des expériences
+              digitales qui allient esthétique moderne et performance technique.
+            </p>
+            <p data-fr="Curieux, créatif et déterminé, je crois fermement que chaque projet est une opportunité d'apprendre, d'innover et de laisser une empreinte. Ma philosophie : transformer chaque ligne de code en une solution qui impacte positivement."
+              data-en="Curious, creative and determined, I firmly believe that every project is an opportunity to learn, innovate and leave a mark. My philosophy: transform every line of code into a solution that makes a positive impact.">
+              Curieux, créatif et déterminé, je crois fermement que chaque projet est une opportunité d'apprendre,
+              d'innover et de laisser une empreinte. Ma philosophie : transformer chaque ligne de code en une solution
+              qui impacte positivement.
+            </p>
+            <p data-fr="Basé à <strong>Douala, Cameroun</strong>, je suis ouvert aux collaborations locales et internationales, aux stages et aux projets freelance."
+              data-en="Based in <strong>Douala, Cameroon</strong>, I am open to local and international collaborations, internships and freelance projects.">
+              Basé à <strong>Douala, Cameroun</strong>, je suis ouvert aux collaborations locales et internationales,
+              aux stages et aux projets freelance.
+            </p>
+          </div>
+          <img src="img8.jpeg" alt="Arthur DJATCHEU" class="hero-photo"
+            onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'" />
+          <div class="about-langs">
+            <span class="lang-badge">🇫🇷 Français</span>
+            <span class="lang-badge">🇬🇧 English</span>
+            <span class="lang-badge">🇪🇸 Español</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     SKILLS SECTION
+============================================ -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label" data-fr="Expertise" data-en="Expertise">Expertise</div>
+        <h2 class="section-title">
+          <span class="gradient-text" data-fr="Compétences" data-en="Skills">Compétences</span>
+        </h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Tech Skills -->
+        <div class="bento-card wide reveal" style="transition-delay:0.1s">
+          <div class="bento-icon">⚡</div>
+          <div class="bento-title" data-fr="Compétences Techniques" data-en="Technical Skills">Compétences Techniques
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>HTML</span><span>90%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-blue" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>CSS</span><span>65%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-violet" data-width="65"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>JavaScript</span><span>60%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-gold" data-width="60"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Python</span><span>60%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-blue" data-width="60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="bento-card reveal" style="transition-delay:0.2s">
+          <div class="bento-icon">🧠</div>
+          <div class="bento-title" data-fr="Soft Skills" data-en="Soft Skills">Soft Skills</div>
+          <ul class="soft-skill-list">
+            <li data-fr="Créativité & Innovation" data-en="Creativity & Innovation">Créativité & Innovation</li>
+            <li data-fr="Gestion de Projet" data-en="Project Management">Gestion de Projet</li>
+            <li data-fr="Travail en Équipe" data-en="Teamwork">Travail en Équipe</li>
+            <li data-fr="Résolution de Problèmes" data-en="Problem Solving">Résolution de Problèmes</li>
+          </ul>
+        </div>
+
+        <!-- Location card -->
+        <div class="bento-card reveal"
+          style="transition-delay:0.3s; background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(124,58,237,0.1));">
+          <div class="bento-icon">🌍</div>
+          <div class="bento-title" data-fr="Localisation" data-en="Location">Localisation</div>
+          <div class="bento-desc"
+            style="font-size:1.3rem; font-family:var(--font-display); font-weight:700; color:var(--text); margin-top:0.5rem;">
+            Douala<br><span style="font-size:0.9rem; color:var(--gold);">Cameroun 🇨🇲</span></div>
+          <div class="bento-desc" style="margin-top:1rem;" data-fr="Ouvert aux opportunités remote & locales"
+            data-en="Open to remote & local opportunities">Ouvert aux opportunités remote & locales</div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="bento-card reveal" style="transition-delay:0.35s">
+          <div class="bento-icon">📊</div>
+          <div class="bento-title" data-fr="Marketing Digital" data-en="Digital Marketing">Marketing Digital</div>
+          <div class="bento-desc"
+            data-fr="Formation Google Digital Garage en cours. Compréhension des stratégies SEO, réseaux sociaux et analytics."
+            data-en="Google Digital Garage training in progress. Understanding of SEO strategies, social media and analytics.">
+            Formation Google Digital Garage en cours. Compréhension des stratégies SEO, réseaux sociaux et analytics.
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="bento-card reveal"
+          style="transition-delay:0.4s; background: linear-gradient(135deg, rgba(212,175,106,0.08), rgba(124,58,237,0.08));">
+          <div class="bento-icon">⚡</div>
+          <div class="bento-title" data-fr="JavaScript" data-en="JavaScript">JavaScript</div>
+          <div class="bento-desc"
+            data-fr="Formation JavaScript en cours. Maîtrise des bases, du DOM et des interactions utilisateur."
+            data-en="JavaScript training in progress. Mastering the basics, DOM and user interactions.">
+            Formation JavaScript en cours.
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="bento-card reveal" style="transition-delay:0.45s">
+          <div class="bento-icon">🛠️</div>
+          <div class="bento-title" data-fr="Outils & Plateformes" data-en="Tools & Platforms">Outils & Plateformes</div>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.8rem;">
+            <span class="project-tag">Git</span>
+            <span class="project-tag">GitHub</span>
+            <span class="project-tag">Vercel</span>
+            <span class="project-tag">VS Code</span>
+            <span class="project-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     FORMATION SECTION
+============================================ -->
+  <section id="formation">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label" data-fr="Parcours académique" data-en="Academic path">Parcours académique</div>
+        <h2 class="section-title">
+          <span class="gradient-text" data-fr="Formation" data-en="Education">Formation</span>
+        </h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="formation-grid">
+        <div class="reveal-left">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date" data-fr="En cours · 2026 — présent" data-en="Ongoing · 2026 — present">En cours
+                · 2026 — présent</div>
+              <div class="timeline-title" data-fr="IUT de Douala" data-en="IUT de Douala">IUT de Douala</div>
+              <div class="timeline-sub"
+                data-fr="Génie Informatique · Douala, Cameroun. Formation en développement logiciel, algorithmique, réseaux et bases de données."
+                data-en="Computer Engineering · Douala, Cameroon. Training in software development, algorithms, networking and databases.">
+                Génie Informatique · Douala, Cameroun<br>Formation en développement logiciel, algorithmique, réseaux et
+                bases de données.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date" data-fr="2025 · Baccalauréat" data-en="2025 · Baccalaureate">2025 ·
+                Baccalauréat
+              </div>
+              <div class="timeline-title" data-fr="Lycée Joss de Douala" data-en="Lycée Joss de Douala">Lycée Joss de
+                Douala</div>
+              <div class="timeline-sub"
+                data-fr="Enseignement secondaire · Douala, Cameroun. Obtention du Baccalauréat avec succès."
+                data-en="Secondary education · Douala, Cameroon. Successful completion of the Baccalaureate.">
+                Enseignement secondaire · Douala, Cameroun<br>Obtention du Baccalauréat avec succès.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <h3 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; margin-bottom:1.5rem;"
+            data-fr="Certifications" data-en="Certifications">Certifications</h3>
+          <div class="cert-grid">
+            <div class="cert-card featured">
+              <div class="cert-icon">💻</div>
+              <div class="cert-info">
+                <div class="cert-name" data-fr="Responsive Web Design" data-en="Responsive Web Design">Responsive Web Design</div>
+                <div class="cert-provider">freeCodeCamp</div>
+                <a class="btn-cert" href="https://freecodecamp.org/certification/aazer/responsive-web-design-v9" target="_blank" rel="noopener">
+                  <span class="btn-cert-title" data-fr="Voir le certificat" data-en="View certificate">Voir le certificat</span>
+                  <span class="btn-cert-sub" data-fr="✅ Obtenu — 11 juin 2026" data-en="✅ Obtained — June 11, 2026">✅ Obtenu — 11 juin 2026</span>
+                </a>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon">📈</div>
+              <div class="cert-info">
+                <div class="cert-name" data-fr="Marketing Digital" data-en="Digital Marketing">Marketing Digital</div>
+                <div class="cert-provider">Google Digital Garage</div>
+                <span class="cert-status" data-fr="En cours" data-en="In progress">En cours</span>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon">⚡</div>
+              <div class="cert-info">
+                <div class="cert-name" data-fr="Algorithmes & Structures de Données JS" data-en="JavaScript Algorithms & Data Structures">Algorithmes & Structures de Données JS</div>
+                <div class="cert-provider">freeCodeCamp</div>
+                <span class="cert-status" data-fr="En cours" data-en="In progress">En cours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     PROJECTS SECTION
+============================================ -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label" data-fr="Mes réalisations" data-en="My work">Mes réalisations</div>
+        <h2 class="section-title">
+          <span class="gradient-text" data-fr="Projets" data-en="Projects">Projets</span>
+        </h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: NURU -->
+        <div class="project-card reveal" style="transition-delay:0.1s">
+          <div class="project-preview">
+            <iframe src="https://nuru-ashy.vercel.app/" title="NURU Preview"></iframe>
+            <div class="project-preview-mock">
+              <div class="mock-dots">
+                <div class="mock-dot"></div>
+                <div class="mock-dot"></div>
+                <div class="mock-dot"></div>
+              </div>
+              <div style="text-align:center;">
+                <div
+                  style="font-family:var(--font-display);font-size:2.5rem;font-weight:800;background:linear-gradient(135deg,#7c3aed,#2563eb);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+                  NURU</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);margin-top:0.5rem;">
+                  nuru-ashy.vercel.app</div>
+              </div>
+            </div>
+            <div class="project-preview-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">01 — 2024</div>
+            <div class="project-title">NURU</div>
+            <div class="project-desc"
+              data-fr="Plateforme de découverte dédiée aux génies tech africains. NURU met en lumière les talents, innovateurs et visionnaires qui façonnent la technologie africaine. 'L'Afrique regorge de génies.'"
+              data-en="Discovery platform dedicated to African tech geniuses. NURU highlights the talents, innovators and visionaries shaping African technology. 'Africa is full of geniuses.'">
+              Plateforme de découverte dédiée aux génies tech africains. NURU met en lumière les talents, innovateurs et
+              visionnaires qui façonnent la technologie africaine.
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Vercel</span>
+            </div>
+            <a href="https://nuru-ashy.vercel.app/" target="_blank" class="project-link" data-fr="Voir le projet →"
+              data-en="View project →">Voir le projet →</a>
+          </div>
+        </div>
+
+        <!-- Project 2: Maëlle Beauty -->
+        <div class="project-card reveal" style="transition-delay:0.2s">
+          <div class="project-preview">
+            <iframe src="https://maelle-beauty-glow.lovable.app/" title="Maëlle Beauty Preview"></iframe>
+            <div class="project-preview-mock">
+              <div class="mock-dots">
+                <div class="mock-dot"></div>
+                <div class="mock-dot"></div>
+                <div class="mock-dot"></div>
+              </div>
+              <div style="text-align:center;">
+                <div
+                  style="font-family:var(--font-display);font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,#d4af6a,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+                  Maëlle Beauty</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);margin-top:0.5rem;">
+                  maelle-beauty-glow.lovable.app</div>
+              </div>
+            </div>
+            <div class="project-preview-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">02 — 2025</div>
+            <div class="project-title">Maëlle Beauty</div>
+            <div class="project-desc"
+              data-fr="Site vitrine e-commerce pour une marque de cosmétiques d'inspiration africaine. Interface élégante mettant en valeur des soins naturels formulés pour les peaux métissées, mates et noires."
+              data-en="E-commerce showcase website for an African-inspired cosmetics brand. Elegant interface showcasing natural skincare formulated for mixed, matte and dark skin tones.">
+              Site vitrine e-commerce pour une marque de cosmétiques d'inspiration africaine. Interface élégante mettant
+              en valeur des soins naturels formulés pour les peaux africaines.
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">Lovable</span>
+            </div>
+            <a href="https://maelle-beauty-glow.lovable.app/" target="_blank" class="project-link"
+              data-fr="Voir le projet →" data-en="View project →">Voir le projet →</a>
+          </div>
+        </div>
+
+        <!-- Project 3: Viny Natural Juice -->
+        <div class="project-card reveal" style="transition-delay:0.3s">
+          <div class="project-preview">
+            <iframe src="https://viny-natural-juice.vercel.app/" title="Viny Natural Juice Preview"></iframe>
+            <div class="project-preview-mock">
+              <div class="mock-dots">
+                <div class="mock-dot"></div>
+                <div class="mock-dot"></div>
+                <div class="mock-dot"></div>
+              </div>
+              <div style="text-align:center;">
+                <div
+                  style="font-family:var(--font-display);font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,#10b981,#d4af6a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+                  Viny Juice</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);margin-top:0.5rem;">
+                  viny-natural-juice.vercel.app</div>
+              </div>
+            </div>
+            <div class="project-preview-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">03 — 2026</div>
+            <div class="project-title">Viny Natural Juice</div>
+            <div class="project-desc"
+              data-fr="Site e-commerce vitrine pour Viny Natural Juice à Douala. Met en valeur des jus de fruits 100% bio et pressés à froid avec un système interactif de recettes personnalisées."
+              data-en="E-commerce showcase website for Viny Natural Juice in Douala. Featuring 100% organic cold-pressed fruit juices with an interactive custom recipe system.">
+              Site e-commerce vitrine pour Viny Natural Juice à Douala. Met en valeur des jus de fruits 100% bio et pressés à froid avec un système interactif de recettes personnalisées.
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">Vercel</span>
+            </div>
+            <a href="https://viny-natural-juice.vercel.app/" target="_blank" class="project-link"
+              data-fr="Voir le projet →" data-en="View project →">Voir le projet →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     CONTACT SECTION
+============================================ -->
+  <section id="contact">
+
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label" data-fr="Travaillons ensemble" data-en="Let's work together">Travaillons ensemble
+        </div>
+        <h2 class="section-title">
+          <div class="contact-photo-wrap"><img src="img1.jpeg" alt="Arthur DJATCHEU" class="contact-photo"
+              onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'" /></div>
+          <span class="gradient-text" data-fr="Contact" data-en="Contact">Contact</span>
+        </h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <h3 data-fr="Discutons de votre projet" data-en="Let's discuss your project">Discutons de votre projet</h3>
+          <p data-fr="Je suis ouvert à toute opportunité : stage, projet freelance, collaboration ou simplement échanger autour du développement web. N'hésitez pas à me contacter !"
+            data-en="I am open to any opportunity: internship, freelance project, collaboration or simply chatting about web development. Feel free to reach out!">
+            Je suis ouvert à toute opportunité : stage, projet freelance, collaboration ou simplement échanger autour du
+            développement web. N'hésitez pas à me contacter !
+          </p>
+          <div class="contact-links">
+            <a href="mailto:djatcheuarthur4@gmail.com" class="contact-link">
+              <div class="contact-link-icon">✉️</div>
+              <span>djatcheuarthur4@gmail.com</span>
+            </a>
+            <a href="https://wa.me/237692253510" target="_blank" class="contact-link">
+              <div class="contact-link-icon">💬</div>
+              <span>+237 692 253 510</span>
+            </a>
+            <a href="https://www.linkedin.com/in/arthur-djatcheu-7397833a4" target="_blank" class="contact-link">
+              <div class="contact-link-icon">🔗</div>
+              <span>LinkedIn — Arthur DJATCHEU</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label data-fr="Prénom" data-en="First name">Prénom</label>
+                <input type="text" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label data-fr="Nom" data-en="Last name">Nom</label>
+                <input type="text" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label data-fr="Sujet" data-en="Subject">Sujet</label>
+              <input type="text" placeholder="Projet freelance, Stage..." required />
+            </div>
+            <div class="form-group">
+              <label data-fr="Message" data-en="Message">Message</label>
+              <textarea placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit" data-fr="Envoyer le message →" data-en="Send message →">Envoyer le
+              message →</button>
+          </form>
+          <div id="form-success" data-fr="✅ Message envoyé avec succès ! Je vous répondrai très bientôt."
+            data-en="✅ Message sent successfully! I'll get back to you very soon.">
+            ✅ Message envoyé avec succès ! Je vous répondrai très bientôt.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">
+      © 2026 <span>Arthur DJATCHEU</span> — Douala, Cameroun 🇨🇲
+    </div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/arthur-djatcheu-7397833a4" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="mailto:djatcheuarthur4@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- ============================================
+     JAVASCRIPT
+============================================ -->
+  <script>
+    /* ---- INTRO SCREEN PRELOADER ---- */
+    const introBtn = document.getElementById('introBtn');
+    const progressFill = document.getElementById('progressFill');
+    const introBtnText = document.getElementById('introBtnText');
+    const introScreen = document.getElementById('intro-screen');
+
+    // Start loading bar immediately
+    setTimeout(() => {
+      progressFill.style.width = '100%';
+    }, 100);
+
+    // After 5 seconds, transform to button
+    setTimeout(() => {
+      introBtn.classList.add('loaded');
+      introBtnText.textContent = "Let's build the future";
+      introBtn.addEventListener('click', enterPortfolio);
+    }, 5100);
+
+    function enterPortfolio() {
+      introScreen.classList.add('fade-out');
+    }
+
+    /* ---- CURSOR ---- */
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; });
+    function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+    document.querySelectorAll('a, button, .bento-card, .project-card, .cert-card, .stat-card, .intro-loader-btn').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        if (el.classList.contains('intro-loader-btn') && !el.classList.contains('loaded')) return;
+        cursor.style.width = '20px'; cursor.style.height = '20px'; ring.style.width = '60px'; ring.style.height = '60px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '12px'; cursor.style.height = '12px'; ring.style.width = '40px'; ring.style.height = '40px';
+      });
     });
 
     /* ---- STARS CANVAS ---- */
