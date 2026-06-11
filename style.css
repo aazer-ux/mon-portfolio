@@ -1290,8 +1290,12 @@
       left: 0; top: 0; bottom: 0;
       width: 0%;
       background: linear-gradient(90deg, rgba(212, 175, 106, 0.15), rgba(212, 175, 106, 0.7));
-      transition: width 5s linear;
+      animation: progress-fill-anim 5s linear forwards;
       z-index: 1;
+    }
+    @keyframes progress-fill-anim {
+      from { width: 0%; }
+      to { width: 100%; }
     }
     .intro-loader-btn span {
       position: relative;
